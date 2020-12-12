@@ -17,17 +17,16 @@ dependencies: [
 A simple overview
 
 ```swift
-let body = [
-    TransferElement(element: .h1, content: "This is your title"),
-    TransferElement(element: .div, attributes: [.class(value: "container")], content: someDivContent)
-]
-
 let head = Head(
         title: "Title", 
         headContent: .styleSheet("styles/someThing.css"), .favicon()
     )
 
-Page(head: head).rendered(withBody: body)
+Page(head: head)
+    .rendered(withBody: 
+        .h1("This is your title"),
+        .div(someDivContent, cssClass: "container")
+        )
 ```
 
 

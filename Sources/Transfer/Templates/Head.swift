@@ -5,11 +5,11 @@ public struct Head {
     public let headContent: [Transferable]
     
     public var element: Transferable {
-        TransferElement(element: .head, content: [titleElement] + headContent)
+        TransferElement(.head, content: [titleElement] + headContent)
     }
     
     private var titleElement: Transferable {
-        TransferElement(element: .title, content: title)
+        TransferElement(.title, content: title)
     }
     
     public init(title: String, headContent: [Transferable]) {
