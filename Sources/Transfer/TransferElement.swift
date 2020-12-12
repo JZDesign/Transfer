@@ -28,7 +28,7 @@ public struct TransferElement: Transferable {
     public var attributes: [HTMLElement.Attribute]
     public var content: String
     
-    public init(element: String, attributes: [HTMLElement.Attribute] = [], content: String) {
+    public init(_ element: String, attributes: [HTMLElement.Attribute] = [], content: String) {
         self.element = element
         self.attributes = attributes
         self.content = content
@@ -36,27 +36,27 @@ public struct TransferElement: Transferable {
 }
 
 extension TransferElement {
-    init(element: String, attributes: [HTMLElement.Attribute] = [], content: [Transferable]) {
-        self.init(element: element, attributes: attributes, content: content.rendered())
+    init(_ element: String, attributes: [HTMLElement.Attribute] = [], content: [Transferable]) {
+        self.init(element, attributes: attributes, content: content.rendered())
     }
     
-    init(element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: [Transferable]) {
-        self.init(element: element.rawValue, attributes: attributes, content: content)
+    init(_ element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: [Transferable]) {
+        self.init(element.rawValue, attributes: attributes, content: content)
     }
 }
 
 
 public extension TransferElement {
-    init(element: String, attributes: [HTMLElement.Attribute] = [], content: Transferable...) {
-        self.init(element: element, attributes: attributes, content: content)
+    init(_ element: String, attributes: [HTMLElement.Attribute] = [], content: Transferable...) {
+        self.init(element, attributes: attributes, content: content)
     }
     
-    init(element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: Transferable...) {
-        self.init(element: element, attributes: attributes, content: content)
+    init(_ element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: Transferable...) {
+        self.init(element, attributes: attributes, content: content)
     }
     
-    init(element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: String) {
-        self.init(element: element.rawValue, attributes: attributes, content: content)
+    init(_ element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: String) {
+        self.init(element.rawValue, attributes: attributes, content: content)
     }
     
     
@@ -78,7 +78,7 @@ public extension TransferElement {
             attributes.append(.media(value: media))
         }
 
-        return TransferElement(element: .link, attributes: attributes, content: "")
+        return TransferElement(.link, attributes: attributes, content: "")
     }
     
     /// A static helper that returns a favicon `<link>` tag
@@ -86,7 +86,7 @@ public extension TransferElement {
     ///   - href: The path to the site's favicon, or the URL of an external one.
     /// - Returns: A TransferElement ready to render a favicon in HTML
     static func favicon(_ href: String = "favicon.ico") -> TransferElement {
-        TransferElement(element: .link, attributes: [.rel(value: "icon"), .href(value: href)], content: "")
+        TransferElement(.link, attributes: [.rel(value: "icon"), .href(value: href)], content: "")
     }
     
 }

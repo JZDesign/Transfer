@@ -4,15 +4,15 @@ import XCTest
 final class TransferableTests: XCTestCase {
     
     lazy var ELEMENT = TransferElement(
-        element: .body,
+        .body,
         attributes: [.data(value:"String"), .class(value:"someClass")],
-        content: TransferElement(element: .a, attributes: [], content: "")
+        content: TransferElement(.a, attributes: [], content: "")
     )
     
     lazy var ELEMENT_2 = TransferElement(
-        element: "body",
+        "body",
         attributes: [.data(value:"String"), .class(value:"someClass")],
-        content: TransferElement(element: .a, attributes: [], content: "")
+        content: TransferElement(.a, attributes: [], content: "")
     )
     
     let attributes = " data=\"String\" class=\"someClass\""

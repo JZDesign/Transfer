@@ -47,9 +47,9 @@ public extension Page {
     /// - Returns: A String of HTML describing the page
     func rendered(_ body: String) -> String {
         TransferElement(
-            element: .html,
+            .html,
             attributes: [.lang(value: language)],
-            content: head.element, TransferElement(element: .body, content: body)
+            content: head.element, TransferElement(.body, content: body)
         ).rendered()
     }
 }

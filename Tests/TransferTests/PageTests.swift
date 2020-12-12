@@ -9,7 +9,7 @@ final class PageTests: XCTestCase {
         
         let result = "<html lang=\"en\"><head><title>Title</title><link rel=\"stylesheet\" href=\"styles/someThing.css\"></link><link rel=\"icon\" href=\"favicon.ico\"></link></head><body><h1>This is your title</h1></body></html>"
         
-        XCTAssertEqual(newPage.rendered(withBody: TransferElement(element: .h1, attributes: [], content: "This is your title")), result)
+        XCTAssertEqual(newPage.rendered(withBody: TransferElement(.h1, attributes: [], content: "This is your title")), result)
         
     }
 }
