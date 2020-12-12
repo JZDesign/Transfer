@@ -2,6 +2,31 @@ import Foundation
 
 
 public extension HTMLElement {
+    
+    /// A list of common HTML Element Attributes
+    /// i.e. `id, style, target, class, alt, etc.,`
+    ///
+    /// Usage:
+    ///
+    /// Passing attributes to the `TransferElement` will automatically get rendered appropriately in the HTML.
+    /// ```
+    /// TransferElement(
+    ///     element: .img,
+    ///     attributes: [
+    ///         .src(value: "images/cute_kitten.jpeg"),
+    ///         .alt(value: "A cute kitten")
+    ///         ],
+    ///     content: ""
+    ///     )
+    /// ```
+    ///
+    /// This example renders the `src` and `alt` attributes inside of an Image element.
+    /// That result would look like this:
+    ///
+    /// ```
+    /// <img src="images/cute_kitten.jpeg" alt="A cute kitten"></img>
+    /// ```
+    ///
     enum Attribute {
         case action(value: String)
         case alt(value: String)
@@ -32,6 +57,13 @@ public extension HTMLElement {
         case value(value: String)
         case custom(key: String, value: String)
         
+        /// The string value of the attribute.
+        ///
+        /// This returns the string value of the attribute .i.e.
+        /// ```
+        /// .src.key == "src", "id", or "class"
+        /// ```
+        ///
         public var key: String {
             switch self {
             case .custom(let wrapped, _): return wrapped
@@ -44,6 +76,13 @@ public extension HTMLElement {
 
 
 public extension HTMLElement.Attribute {
+    /// Converts the instance into an HTML Element's Attribute
+    /// - Returns: A fully qualified string of the associated attribute
+    ///
+    ///```
+    /// .src(value: "someFile.txt").toHTMLAttribute() == " src=\"someFile.txt\""
+    /// ```
+    ///
     func toHTMLAttribute() -> String {
         return " \(key)=\(getValue())"
     }
