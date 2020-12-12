@@ -13,29 +13,3 @@ final class PageTests: XCTestCase {
         
     }
 }
-
-
-struct Body {
-    
-    func doX() {
-        let someDivContent = TransferElement(element: "", content: "")
-        
-        let body = [
-            TransferElement(element: .h1, content: "This is your title"),
-            TransferElement(element: .div, attributes: [.class(value: "container")], content: someDivContent)
-        ]
-        
-        Page(
-            head: Head(
-                title: "Title", headContent:
-                        .styleSheet("styles/someThing.css"),
-                       .favicon()
-            )
-        ).rendered(withBody: body)
-        
-        
-    }
-    
-}
-
-
