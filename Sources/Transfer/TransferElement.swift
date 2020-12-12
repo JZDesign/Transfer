@@ -58,35 +58,4 @@ public extension TransferElement {
     init(_ element: HTMLElement, attributes: [HTMLElement.Attribute] = [], content: String) {
         self.init(element.rawValue, attributes: attributes, content: content)
     }
-    
-    
-    // MARK: - Helpers
-    
-    
-    /// A static helper that returns a stylesheet `<link>` tag
-    /// - Parameters:
-    ///   - href: The path to the site's stylesheet, or the URL of an external one.
-    ///   - media: A String describing the screen size the stylesheet covers, this is not required. See more [on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#Attributes)
-    /// - Returns: A TransferElement ready to render a stylesheet in HTML
-    static func styleSheet(_ href: String, media: String = "") -> TransferElement {
-        var attributes: [HTMLElement.Attribute] = [
-            .rel(value: "stylesheet"),
-            .href(value: href)
-        ]
-        
-        if media != "" {
-            attributes.append(.media(value: media))
-        }
-
-        return TransferElement(.link, attributes: attributes, content: "")
-    }
-    
-    /// A static helper that returns a favicon `<link>` tag
-    /// - Parameters:
-    ///   - href: The path to the site's favicon, or the URL of an external one.
-    /// - Returns: A TransferElement ready to render a favicon in HTML
-    static func favicon(_ href: String = "favicon.ico") -> TransferElement {
-        TransferElement(.link, attributes: [.rel(value: "icon"), .href(value: href)], content: "")
-    }
-    
 }

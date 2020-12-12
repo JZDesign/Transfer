@@ -114,3 +114,10 @@ fileprivate extension HTMLElement.Attribute {
         Mirror(reflecting: self).children.first?.label ?? ""
     }
 }
+
+public enum Target: String {
+    case blank = "_blank"
+    case `self` = "_self"
+    case parent = "_parent"
+    case top = "_top"
+}
