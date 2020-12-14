@@ -22,21 +22,11 @@ public class Page {
         self.head = head
         self.bodyContent = body
     }
-}
-
-public extension Page {
-    // Updates the contained body
-    /// - Parameter body: The desired body of the page
-    /// - Returns: The modified Page
-    func with(body: TransferElement...) -> Self {
-        bodyContent = body
-        return self
-    }
     
     /// Renders the Page as HTML
     /// - Parameter body: The desired body of the page
     /// - Returns: A String of HTML describing the page
-    func rendered() -> String {
+    public func rendered() -> String {
         HTML_DOCTYPE +
         TransferElement(
             .html,

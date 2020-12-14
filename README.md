@@ -53,7 +53,7 @@ Then you can render a page like:
 
 app.get("site") {
         $0.transfer(
-            Page(head: Head(title: "Some Title", headContent: [], body: .h1("Hey!"))).rendered()
+            Page(head: Head(title: "Some Title", headContent: []), body: .h1("Hey!")).rendered()
         )
     }
 ```

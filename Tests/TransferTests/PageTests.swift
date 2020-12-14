@@ -9,11 +9,11 @@ final class PageTests: XCTestCase {
         let content: [TransferElement] = [.styleSheet("styles/someThing.css"), .favicon()]
         
         XCTAssertEqual(
-            Page(head: Head(title: "Title", headContent: content))
-                .with(
-                    body:
-                        .h1("This is your title"),
-                        .div(.p("This is a test", cssClass: "bold"), cssClass: "someClass")
+            Page(
+                head: Head(title: "Title", headContent: content),
+                body:
+                    .h1("This is your title"),
+                    .div(.p("This is a test", cssClass: "bold"), cssClass: "someClass")
                 ).rendered(),
             result
         )
