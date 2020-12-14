@@ -4,53 +4,44 @@ import Foundation
 ///
 /// This encapsulates the logic to render an entire webpage.
 ///
-public struct Page {
+public class Page {
     public let language: String
     public let head: Head
+    public var bodyContent: [TransferElement]
     
     /// Initializes an instance of a Page
     /// - Parameters:
     ///   - language: The page's language. i.e. "en"
     ///   - head: A Head template.
-    public init(language: String = "en", head: Head) {
+    public init(
+        language: String = "en",
+        head: Head,
+        body: TransferElement...
+    ) {
         self.language = language
         self.head = head
+        self.bodyContent = body
     }
-
 }
 
 public extension Page {
-    
-    /// Renders the Page as HTML
+    // Updates the contained body
     /// - Parameter body: The desired body of the page
-    /// - Returns: A String of HTML describing the page
-    func rendered(withBody body: TransferElement...) -> String {
-        rendered(withBody: body)
+    /// - Returns: The modified Page
+    func with(body: TransferElement...) -> Self {
+        bodyContent = body
+        return self
     }
     
     /// Renders the Page as HTML
     /// - Parameter body: The desired body of the page
     /// - Returns: A String of HTML describing the page
-    func rendered(withBody body: Transferable...) -> String {
-        rendered(withBody: body)
-    }
-    
-    /// Renders the Page as HTML
-    /// - Parameter body: The desired body of the page
-    /// - Returns: A String of HTML describing the page
-    func rendered(withBody body: [Transferable]) -> String {
-        rendered(body.rendered())
-    }
-    
-    /// Renders the Page as HTML
-    /// - Parameter body: The desired body of the page
-    /// - Returns: A String of HTML describing the page
-    func rendered(_ body: String) -> String {
+    func rendered() -> String {
         HTML_DOCTYPE +
         TransferElement(
             .html,
             attributes: [.lang(value: language)],
-            content: head.element, TransferElement(.body, content: body)
+            content: head.element, TransferElement(.body, content: bodyContent)
         ).rendered()
     }
 }
