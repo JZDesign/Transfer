@@ -34,14 +34,27 @@ Page(head: head)
 
 ### Using Transfer in a [Vapor](https://github.com/vapor/vapor) project
 
-This package intentionally has no dependencies, and therefore does not wrap anything for convenience in Vapor. To use Transfer with Vapor, add this extension to your project.
+This package intentionally has no dependencies, and therefore does not wrap anything for convenience in Vapor. To use Transfer with Vapor, add these extensions to your project.
 
 ```swift
 import Vapor
+import Transfer
 
 extension Request {
     func transfer(_ html: String) -> EventLoopFuture<Response> {
-        eventLoop.makeSucceededFuture(Response(status: .ok, headers: HTML_CONTENT_HEADER, body: Response.Body(string: html)))
+        eventLoop.makeSucceededFuture(
+            Response(
+                status: .ok,
+                headers: [HTML_CONTENT_KEY : HTML_CONTENT_VALUE],
+                body: Response.Body(string: html)
+                )
+            )
+    }
+}
+
+extension Page: ResponseEncodable {
+    public func encodeResponse(for request: Request) -> EventLoopFuture<Response> {
+        request.transfer(rendered())
     }
 }
 ```
@@ -51,9 +64,10 @@ Then you can render a page like:
 ```swift
 // in Routes.swift
 
-app.get("site") {
-        $0.transfer(
-            Page(head: Head(title: "Some Title", headContent: [])).rendered("<h1>Hey!</h1>")
+app.get { _ in
+    Page(
+        head: Head(title: "Some Title", headContent: .favicon()),
+        body: .h1("Hey!")
         )
-    }
+}
 ```
