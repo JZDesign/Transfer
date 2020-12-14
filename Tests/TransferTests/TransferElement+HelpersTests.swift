@@ -7,7 +7,7 @@ final class TransferElementHelperTests: XCTestCase {
     
     lazy var artical = TransferElement.article(a)
     lazy var renderedA = """
-<a href="a" target="_blank" class=\"\">b</a>
+<a href="a" target="_blank">b</a>
 """
     
     func testAnchorPrePopulatesWithSetAttributes() {
@@ -46,7 +46,7 @@ final class TransferElementHelperTests: XCTestCase {
     
     func testImagePrepopulatesAttributes() {
         assert(.img("img/1.png"), matches: """
-<img src="img/1.png" alt="" class=""></img>
+<img src="img/1.png"></img>
 """)
     }
     
@@ -88,7 +88,7 @@ final class TransferElementHelperTests: XCTestCase {
     
     func rendered(_ element: String, _ content: String = "") -> String {
         """
-<\(element) class=\"\">\(content)</\(element)>
+<\(element)>\(content)</\(element)>
 """
     }
 }

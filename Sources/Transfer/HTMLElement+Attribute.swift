@@ -88,6 +88,13 @@ public extension HTMLElement.Attribute {
     }
 }
 
+public extension Array where Element == HTMLElement.Attribute {
+    func ignoringEmpty() -> [HTMLElement.Attribute] {
+        filter { $0.getValue() != "\"\"" }
+    }
+    
+}
+
 fileprivate extension HTMLElement.Attribute {
     func getValue() -> String {
         switch self {

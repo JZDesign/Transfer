@@ -21,7 +21,7 @@ extension Transferable {
     /// - Parameter attributes: HTMLElement.Attibute (.class, .style, etc.,)
     /// - Returns: A fully built String of HTMLElement Attributes i.e. " class="someClass" src="someSource""
     func elementAttributes(_ attributes: [HTMLElement.Attribute]) -> String {
-        attributes.compactMap { $0.toHTMLAttribute() }.joined()
+        attributes.ignoringEmpty().compactMap { $0.toHTMLAttribute() }.joined()
     }
 }
 
