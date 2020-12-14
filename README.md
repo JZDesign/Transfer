@@ -14,7 +14,7 @@ dependencies: [
 
 ## Usage
 
-A simple overview
+### A simple overview
 
 ```swift
 let head = Head(
@@ -31,3 +31,29 @@ Page(head: head)
 
 
 ![Rendered HTML Result](img/rendered_html.png)
+
+### Using Transfer in a [Vapor](https://github.com/vapor/vapor) project
+
+This package intentionally has no dependencies, and therefore does not wrap anything for convenience in Vapor. To use Transfer with Vapor, add this extension to your project.
+
+```swift
+import Vapor
+
+extension Request {
+    func transfer(_ html: String) -> EventLoopFuture<Response> {
+        eventLoop.makeSucceededFuture(Response(status: .ok, headers: HTML_CONTENT_HEADER, body: Response.Body(string: html)))
+    }
+}
+```
+
+Then you can render a page like:
+
+```swift
+// in Routes.swift
+
+app.get("site") {
+        $0.transfer(
+            Page(head: Head(title: "Some Title", headContent: [])).rendered("<h1>Hey!</h1>")
+        )
+    }
+```

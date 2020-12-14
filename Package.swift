@@ -9,9 +9,7 @@ let package = Package(
        .macOS(.v10_15)
     ],
     products: [
-        .library(
-            name: "Transfer",
-            targets: ["Transfer"]),
+        .library(name: "Transfer", targets: ["Transfer"]),
     ],
     dependencies: [
     ],
