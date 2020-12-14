@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransferElement Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/TransferElement" class="dashAnchor"></a>
+    <a title="TransferElement Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (21% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TransferElement Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Page.html">Page</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8Transfer16HTML_CONTENT_KEYSSvp">HTML_CONTENT_KEY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8Transfer18HTML_CONTENT_VALUESSvp">HTML_CONTENT_VALUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:8Transfer12HTML_DOCTYPESSvp">HTML_DOCTYPE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HTMLElement.html">HTMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTMLElement/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Target.html">Target</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Transferable.html">Transferable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Head.html">Head</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransferElement.html">TransferElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TransferElement</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransferElement</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Transferable.html">Transferable</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The implementation of the Transferable Protocol</p>
+
+<p>This structure is made to contain all of the details about each HTML element
+ and will render as HTML when needed.</p>
+
+<p>Usage:</p>
+<pre class="highlight swift"><code> <span class="kt">TransferElement</span><span class="p">(</span>
+     <span class="nv">element</span><span class="p">:</span> <span class="o">.</span><span class="n">img</span><span class="p">,</span>
+     <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span>
+         <span class="o">.</span><span class="nf">src</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="s">"images/cute_kitten.jpeg"</span><span class="p">),</span>
+         <span class="o">.</span><span class="nf">alt</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="s">"A cute kitten"</span><span class="p">)</span>
+         <span class="p">],</span>
+     <span class="nv">content</span><span class="p">:</span> <span class="s">""</span>
+     <span class="p">)</span><span class="o">.</span><span class="nf">rendered</span><span class="p">()</span>
+</code></pre>
+
+<p>This returns:</p>
+<pre class="highlight swift"><code> <span class="s">"&lt;img src=</span><span class="se">\"</span><span class="s">images/cute_kitten.jpeg</span><span class="se">\"</span><span class="s"> alt=</span><span class="se">\"</span><span class="s">A cute kitten</span><span class="se">\"</span><span class="s">&gt;&lt;/img&gt;"</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV7elementSSvp"></a>
+                    <a name="//apple_ref/swift/Property/element" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV7elementSSvp">element</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV10attributesSayAA11HTMLElementO9AttributeOGvp"></a>
+                    <a name="//apple_ref/swift/Property/attributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV10attributesSayAA11HTMLElementO9AttributeOGvp">attributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV7contentSSvp"></a>
+                    <a name="//apple_ref/swift/Property/content" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV7contentSSvp">content</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV_10attributes7contentACSS_SayAA11HTMLElementO9AttributeOGSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:attributes:content:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV_10attributes7contentACSS_SayAA11HTMLElementO9AttributeOGSStcfc">init(_:<wbr>attributes:<wbr>content:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV10styleSheet_5mediaACSS_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/styleSheet(_:media:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV10styleSheet_5mediaACSS_SStFZ">styleSheet(_:<wbr>media:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a stylesheet <code>&lt;link&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">styleSheet</span><span class="p">(</span><span class="n">_</span> <span class="nv">href</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">media</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>href</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the site&rsquo;s stylesheet, or the URL of an external one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>media</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A String describing the screen size the stylesheet covers, this is not required. See more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#Attributes">on MDN</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a stylesheet in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV7faviconyACSSFZ"></a>
+                    <a name="//apple_ref/swift/Method/favicon(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV7faviconyACSSFZ">favicon(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a favicon <code>&lt;link&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">favicon</span><span class="p">(</span><span class="n">_</span> <span class="nv">href</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"favicon.ico"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>href</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the site&rsquo;s favicon, or the URL of an external one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a favicon in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV1a_7content8cssClass6target20additionalAttributesACSS_S2SAA6TargetOSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/a(_:content:cssClass:target:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV1a_7content8cssClass6target20additionalAttributesACSS_S2SAA6TargetOSayAA11HTMLElementO9AttributeOGtFZ">a(_:<wbr>content:<wbr>cssClass:<wbr>target:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns an anchor <code>&lt;a&gt;</code> tag</p>
+
+<p>By default this helper will return an anchor element with the <code>href</code>, <code>target</code> and <code>class</code> attributes,
+although more can be included.</p>
+<pre class="highlight swift"><code><span class="o">.</span><span class="nf">a</span><span class="p">(</span>
+    <span class="s">"www.mysite.com/blogs/1"</span><span class="p">,</span>
+    <span class="nv">content</span><span class="p">:</span> <span class="kt">StyledButtonElement</span><span class="p">(</span><span class="s">"Click Me"</span><span class="p">)</span><span class="o">.</span><span class="nf">rendered</span><span class="p">()</span>
+    <span class="p">)</span><span class="o">.</span><span class="nf">rendered</span><span class="p">()</span>
+</code></pre>
+
+<p>This would return:</p>
+<pre class="highlight plaintext"><code>&lt;a href="www.mysite.com/blogs/1" class="" target="_blank"&gt;&lt;div class="someButtonClass"&gt;Click Me&lt;/div&gt;&lt;/a&gt;
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">a</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">href</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">target</span><span class="p">:</span> <span class="kt"><a href="../Enums/Target.html">Target</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">blank</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>href</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path the anchor should bring you to, or the URL of an external one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the anchor should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Target type <strong>Defaults to blank</strong>, <code>i.e. blank, self etc.,</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render an anchor in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV7article_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/article(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV7article_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">article(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a article <code>&lt;article&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">article</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a article in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV4body_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/body(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV4body_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">body(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a body <code>&lt;body&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">body</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a body in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2brACyFZ"></a>
+                    <a name="//apple_ref/swift/Method/br()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2brACyFZ">br()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a break <code>&lt;br&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">br</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a break in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV3div_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/div(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV3div_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">div(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a div <code>&lt;div&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">div</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a div in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV6footer_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/footer(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV6footer_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">footer(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a footer <code>&lt;footer&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">footer</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a footer in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2h1_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/h1(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2h1_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">h1(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a header <code>&lt;h1&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">h1</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;h1&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a header in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2h2_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/h2(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2h2_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">h2(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a header <code>&lt;h2&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">h2</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;h2&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a header in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2h3_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/h3(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2h3_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">h3(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a header <code>&lt;h3&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">h3</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;h3&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a header in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV6header_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/header(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV6header_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">header(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a header <code>&lt;header&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">header</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a header in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2hrACyFZ"></a>
+                    <a name="//apple_ref/swift/Method/hr()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2hrACyFZ">hr()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a horizontal rule <code>&lt;hr&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">hr</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a horizontal rule in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV3img_7altText8cssClass20additionalAttributesACSS_S2SSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/img(_:altText:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV3img_7altText8cssClass20additionalAttributesACSS_S2SSayAA11HTMLElementO9AttributeOGtFZ">img(_:<wbr>altText:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a img <code>&lt;img&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">img</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">src</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">altText</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>src</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The path to the image file that will be displayed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>altText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The string that contains helper text (useful for accessiblity)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a img in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2li_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/li(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2li_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">li(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a list item <code>&lt;li&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">li</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;li&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a list item in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV3nav_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/nav(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV3nav_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">nav(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a nav <code>&lt;nav&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">nav</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a nav in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2ol_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/ol(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2ol_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">ol(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns an ordered list <code>&lt;ol&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">ol</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render an ordered list in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV1p_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/p(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV1p_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">p(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a paragraph <code>&lt;p&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">p</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;p&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a paragraph in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV7section_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/section(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV7section_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">section(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a section <code>&lt;section&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">section</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a section in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV4span_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/span(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV4span_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">span(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a span <code>&lt;span&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">span</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;p&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a span in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV6strong_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/strong(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV6strong_8cssClass20additionalAttributesACSS_SSSayAA11HTMLElementO9AttributeOGtFZ">strong(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns a strong <code>&lt;strong&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">strong</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to display (or the rendered HTML Element that the <code>&lt;p&gt;</code> should contain)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render a strong in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV2ul_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/ul(_:cssClass:additionalAttributes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV2ul_8cssClass20additionalAttributesA2Cd_SSSayAA11HTMLElementO9AttributeOGtFZ">ul(_:<wbr>cssClass:<wbr>additionalAttributes:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A static helper that returns an unordered list <code>&lt;ul&gt;</code> tag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">ul</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">TransferElement</span><span class="o">...</span><span class="p">,</span>
+    <span class="nv">cssClass</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+    <span class="nv">additionalAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">TransferElement</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vararg TransferElements to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cssClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired class. <strong>Defaults to &ldquo;&rdquo;</strong></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addtionalAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any HTMLElement.Attribute that could be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A TransferElement ready to render an unordered list in HTML</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV_10attributes7contentACSS_SayAA11HTMLElementO9AttributeOGAA12Transferable_pdtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:attributes:content:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV_10attributes7contentACSS_SayAA11HTMLElementO9AttributeOGAA12Transferable_pdtcfc">init(_:<wbr>attributes:<wbr>content:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">content</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Transferable.html">Transferable</a></span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV_10attributes7contentAcA11HTMLElementO_SayAG9AttributeOGAA12Transferable_pdtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:attributes:content:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV_10attributes7contentAcA11HTMLElementO_SayAG9AttributeOGAA12Transferable_pdtcfc">init(_:<wbr>attributes:<wbr>content:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">content</span><span class="p">:</span> <span class="kt"><a href="../Protocols/Transferable.html">Transferable</a></span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer0A7ElementV_10attributes7contentAcA11HTMLElementO_SayAG9AttributeOGSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(_:attributes:content:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer0A7ElementV_10attributes7contentAcA11HTMLElementO_SayAG9AttributeOGSStcfc">init(_:<wbr>attributes:<wbr>content:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="p">,</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HTMLElement.html">HTMLElement</a></span><span class="o">.</span><span class="kt">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">content</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-12-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

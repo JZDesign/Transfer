@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Attribute Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/Attribute" class="dashAnchor"></a>
+    <a title="Attribute Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html"> Docs</a> (21% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html"> Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Attribute Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Page.html">Page</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Global%20Variables.html#/s:8Transfer16HTML_CONTENT_KEYSSvp">HTML_CONTENT_KEY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Global%20Variables.html#/s:8Transfer18HTML_CONTENT_VALUESSvp">HTML_CONTENT_VALUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Global%20Variables.html#/s:8Transfer12HTML_DOCTYPESSvp">HTML_DOCTYPE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/HTMLElement.html">HTMLElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/HTMLElement/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Target.html">Target</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/Transferable.html">Transferable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/Head.html">Head</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/TransferElement.html">TransferElement</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Attribute</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Attribute</span></code></pre>
+
+                </div>
+              </div>
+            <p>A list of common HTML Element Attributes
+i.e. <code>id, style, target, class, alt, etc.,</code></p>
+
+<p>Usage:</p>
+
+<p>Passing attributes to the <code><a href="../../Structs/TransferElement.html">TransferElement</a></code> will automatically get rendered appropriately in the HTML.</p>
+<pre class="highlight swift"><code><span class="kt">TransferElement</span><span class="p">(</span>
+    <span class="nv">element</span><span class="p">:</span> <span class="o">.</span><span class="n">img</span><span class="p">,</span>
+    <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">src</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="s">"images/cute_kitten.jpeg"</span><span class="p">),</span>
+        <span class="o">.</span><span class="nf">alt</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="s">"A cute kitten"</span><span class="p">)</span>
+        <span class="p">],</span>
+    <span class="nv">content</span><span class="p">:</span> <span class="s">""</span>
+    <span class="p">)</span>
+</code></pre>
+
+<p>This example renders the <code>src</code> and <code>alt</code> attributes inside of an Image element.
+That result would look like this:</p>
+<pre class="highlight swift"><code><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s">"images/cute_kitten.jpeg"</span> <span class="n">alt</span><span class="o">=</span><span class="s">"A cute kitten"</span><span class="o">&gt;&lt;/</span><span class="n">img</span><span class="o">&gt;</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO6actionyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/action(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO6actionyAESS_tcAEmF">action(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">action</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO3altyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/alt(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO3altyAESS_tcAEmF">alt(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">alt</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO9autofocusyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/autofocus(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO9autofocusyAESS_tcAEmF">autofocus(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">autofocus</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO7checkedyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/checked(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO7checkedyAESS_tcAEmF">checked(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">checked</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4citeyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/cite(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4citeyAESS_tcAEmF">cite(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">cite</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5classyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/class(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5classyAESS_tcAEmF">class(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="err">`</span><span class="kd">class</span><span class="err">`</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4datayAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/data(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4datayAESS_tcAEmF">data(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">data</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO9draggableyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/draggable(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO9draggableyAESS_tcAEmF">draggable(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">draggable</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4formyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/form(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4formyAESS_tcAEmF">form(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">form</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO10formactionyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/formaction(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO10formactionyAESS_tcAEmF">formaction(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">formaction</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4hrefyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/href(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4hrefyAESS_tcAEmF">href(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">href</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO2idyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/id(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO2idyAESS_tcAEmF">id(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">id</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5labelyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/label(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5labelyAESS_tcAEmF">label(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">label</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4langyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/lang(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4langyAESS_tcAEmF">lang(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">lang</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5mediayAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/media(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5mediayAESS_tcAEmF">media(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">media</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4nameyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/name(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4nameyAESS_tcAEmF">name(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">name</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO11placeholderyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/placeholder(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO11placeholderyAESS_tcAEmF">placeholder(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">placeholder</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO3relyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/rel(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO3relyAESS_tcAEmF">rel(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">rel</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO8selectedyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/selected(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO8selectedyAESS_tcAEmF">selected(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">selected</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4spanyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/span(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4spanyAESS_tcAEmF">span(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">span</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO3srcyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/src(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO3srcyAESS_tcAEmF">src(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">src</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5styleyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/style(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5styleyAESS_tcAEmF">style(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">style</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO6targetyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/target(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO6targetyAESS_tcAEmF">target(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">target</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5titleyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/title(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5titleyAESS_tcAEmF">title(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">title</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO9translateyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/translate(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO9translateyAESS_tcAEmF">translate(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">translate</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO4typeyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/type(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO4typeyAESS_tcAEmF">type(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">type</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO5valueyAESS_tcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/value(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO5valueyAESS_tcAEmF">value(value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">value</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO6customyAESS_SStcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/custom(key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO6customyAESS_SStcAEmF">custom(key:<wbr>value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">custom</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO3keySSvp"></a>
+                    <a name="//apple_ref/swift/Property/key" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO3keySSvp">key</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The string value of the attribute.</p>
+
+<p>This returns the string value of the attribute .i.e.</p>
+<pre class="highlight swift"><code><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="s">"src"</span><span class="p">,</span> <span class="s">"id"</span><span class="p">,</span> <span class="n">or</span> <span class="s">"class"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Transfer11HTMLElementO9AttributeO15toHTMLAttributeSSyF"></a>
+                    <a name="//apple_ref/swift/Method/toHTMLAttribute()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Transfer11HTMLElementO9AttributeO15toHTMLAttributeSSyF">toHTMLAttribute()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the instance into an HTML Element&rsquo;s Attribute</p>
+<pre class="highlight swift"><code> <span class="o">.</span><span class="nf">src</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="s">"someFile.txt"</span><span class="p">)</span><span class="o">.</span><span class="nf">toHTMLAttribute</span><span class="p">()</span> <span class="o">==</span> <span class="s">" src=</span><span class="se">\"</span><span class="s">someFile.txt</span><span class="se">\"</span><span class="s">"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">toHTMLAttribute</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A fully qualified string of the associated attribute</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-12-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

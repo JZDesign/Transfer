@@ -1,0 +1,1055 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Globals.swift",
+      "line": 3,
+      "symbol": "HTML_CONTENT_KEY",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Globals.swift",
+      "line": 4,
+      "symbol": "HTML_CONTENT_VALUE",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Globals.swift",
+      "line": 5,
+      "symbol": "HTML_DOCTYPE",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 31,
+      "symbol": "HTMLElement.Attribute.action(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 32,
+      "symbol": "HTMLElement.Attribute.alt(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 33,
+      "symbol": "HTMLElement.Attribute.autofocus(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 34,
+      "symbol": "HTMLElement.Attribute.checked(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 35,
+      "symbol": "HTMLElement.Attribute.cite(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 36,
+      "symbol": "HTMLElement.Attribute.class(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 37,
+      "symbol": "HTMLElement.Attribute.data(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 38,
+      "symbol": "HTMLElement.Attribute.draggable(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 39,
+      "symbol": "HTMLElement.Attribute.form(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 40,
+      "symbol": "HTMLElement.Attribute.formaction(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 41,
+      "symbol": "HTMLElement.Attribute.href(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 42,
+      "symbol": "HTMLElement.Attribute.id(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 43,
+      "symbol": "HTMLElement.Attribute.label(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 44,
+      "symbol": "HTMLElement.Attribute.lang(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 45,
+      "symbol": "HTMLElement.Attribute.media(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 46,
+      "symbol": "HTMLElement.Attribute.name(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 47,
+      "symbol": "HTMLElement.Attribute.placeholder(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 48,
+      "symbol": "HTMLElement.Attribute.rel(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 49,
+      "symbol": "HTMLElement.Attribute.selected(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 50,
+      "symbol": "HTMLElement.Attribute.span(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 51,
+      "symbol": "HTMLElement.Attribute.src(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 52,
+      "symbol": "HTMLElement.Attribute.style(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 53,
+      "symbol": "HTMLElement.Attribute.target(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 54,
+      "symbol": "HTMLElement.Attribute.title(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 55,
+      "symbol": "HTMLElement.Attribute.translate(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 56,
+      "symbol": "HTMLElement.Attribute.type(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 57,
+      "symbol": "HTMLElement.Attribute.value(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 58,
+      "symbol": "HTMLElement.Attribute.custom(key:value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 92,
+      "symbol": "Array.ignoringEmpty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 125,
+      "symbol": "Target",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 126,
+      "symbol": "Target.blank",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 127,
+      "symbol": "Target.self",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 128,
+      "symbol": "Target.parent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement+Attribute.swift",
+      "line": 129,
+      "symbol": "Target.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.a",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.abbr",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.address",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.area",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.article",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.aside",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.audio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.b",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.base",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.blockquote",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.body",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.br",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.button",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.caption",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.cite",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.code",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.col",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.colgroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.data",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.datalist",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.dd",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.details",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.dfn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.dialog",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.div",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.dl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.dt",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.em",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.embed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.fieldset",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.figcaption",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.figure",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.footer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.form",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h5",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.h6",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.head",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.header",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.hgroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.hr",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.html",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.iframe",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.img",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.input",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.label",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.legend",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.li",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.link",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.main",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.map",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.menu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.meta",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.meter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.nav",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.noscript",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.object",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.ol",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.optgroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.option",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.p",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.param",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.picture",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.pre",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.progress",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.s",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.section",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.select",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.small",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.source",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.span",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.strong",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.style",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.sub",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.summary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.sup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.table",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.tbody",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.td",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.textarea",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.tfoot",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.th",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.thead",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.time",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.title",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.tr",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.track",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.ul",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.var",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/HTMLElement.swift",
+      "line": 7,
+      "symbol": "HTMLElement.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 3,
+      "symbol": "Head",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 4,
+      "symbol": "Head.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 5,
+      "symbol": "Head.headContent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 7,
+      "symbol": "Head.element",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 15,
+      "symbol": "Head.init(title:headContent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 20,
+      "symbol": "Head.init(title:headContent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Head.swift",
+      "line": 24,
+      "symbol": "Head.rendered()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Page.swift",
+      "line": 8,
+      "symbol": "Page.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Page.swift",
+      "line": 9,
+      "symbol": "Page.head",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Templates/Page.swift",
+      "line": 10,
+      "symbol": "Page.bodyContent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 27,
+      "symbol": "TransferElement.element",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 28,
+      "symbol": "TransferElement.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 29,
+      "symbol": "TransferElement.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 31,
+      "symbol": "TransferElement.init(_:attributes:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 50,
+      "symbol": "TransferElement.init(_:attributes:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 54,
+      "symbol": "TransferElement.init(_:attributes:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/TransferElement.swift",
+      "line": 58,
+      "symbol": "TransferElement.init(_:attributes:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Transferable.swift",
+      "line": 5,
+      "symbol": "Transferable.element",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Transferable.swift",
+      "line": 6,
+      "symbol": "Transferable.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/Transfer/Transfer/Sources/Transfer/Transferable.swift",
+      "line": 7,
+      "symbol": "Transferable.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/Transfer/Transfer"
+}
