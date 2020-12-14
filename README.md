@@ -17,16 +17,10 @@ dependencies: [
 ### A simple overview
 
 ```swift
-let head = Head(
-        title: "Title", 
-        headContent: .styleSheet("styles/someThing.css"), .favicon()
-    )
-
-Page(head: head)
-    .rendered(withBody: 
-        .h1("This is your title"),
-        .div(someDivContent, cssClass: "container")
-        )
+Page(
+    head: Head(title: "Some Title", headContent: .favicon()),
+    body: .h1("Hey!"), .p("How you doin'?")
+    ).rendered()
 ```
 
 
@@ -47,7 +41,7 @@ extension Request {
                 status: .ok,
                 headers: [HTML_CONTENT_KEY : HTML_CONTENT_VALUE],
                 body: Response.Body(string: html)
-                )
+                )a
             )
     }
 }
