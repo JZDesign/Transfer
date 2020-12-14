@@ -19,8 +19,9 @@ dependencies: [
 ```swift
 Page(
     head: Head(title: "Some Title", headContent: .favicon()),
-    body: .h1("Hey!"), .p("How you doin'?")
-    ).rendered()
+    body: .h1("Hey!"),
+    .div(.p("How you doin?"), cssClass: "container")
+).rendered()
 ```
 
 
