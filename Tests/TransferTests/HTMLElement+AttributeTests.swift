@@ -15,6 +15,12 @@ final class AttributesTests: XCTestCase {
             [HTMLElement.Attribute.class(value: "")].ignoringEmpty().count,
             0
         )
+        
+        XCTAssertEqual(
+            [HTMLElement.Attribute.class(value: "a")].ignoringEmpty().count,
+            1
+        )
+        
     }
     
 }
