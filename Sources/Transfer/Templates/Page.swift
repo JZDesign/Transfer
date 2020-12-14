@@ -46,6 +46,7 @@ public extension Page {
     /// - Parameter body: The desired body of the page
     /// - Returns: A String of HTML describing the page
     func rendered(_ body: String) -> String {
+        HTML_DOCTYPE +
         TransferElement(
             .html,
             attributes: [.lang(value: language)],
