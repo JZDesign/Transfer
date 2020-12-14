@@ -10,4 +10,11 @@ final class AttributesTests: XCTestCase {
         XCTAssertEqual(HTMLElement.Attribute.custom(key: "data-2.0", value: "nein!").toHTMLAttribute(), " data-2.0=\"nein!\"")
     }
 
+    func testIgnoringEmpty() {
+        XCTAssertEqual(
+            [HTMLElement.Attribute.class(value: "")].ignoringEmpty().count,
+            0
+        )
+    }
+    
 }

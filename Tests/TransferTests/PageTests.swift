@@ -3,7 +3,7 @@ import XCTest
 
 final class PageTests: XCTestCase {
     
-    let result = "<html lang=\"en\"><head><title>Title</title><link rel=\"stylesheet\" href=\"styles/someThing.css\"></link><link rel=\"icon\" href=\"favicon.ico\"></link></head><body><h1 class=\"\">This is your title</h1><div class=\"someClass\"><p class=\"bold\">This is a test</p></div></body></html>"
+    let result = "<html lang=\"en\"><head><title>Title</title><link rel=\"stylesheet\" href=\"styles/someThing.css\"></link><link rel=\"icon\" href=\"favicon.ico\"></link></head><body><h1>This is your title</h1><div class=\"someClass\"><p class=\"bold\">This is a test</p></div></body></html>"
     
     func testPageRendersHTML() {
         let content: [TransferElement] = [.styleSheet("styles/someThing.css"), .favicon()]
