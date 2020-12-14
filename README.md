@@ -38,10 +38,17 @@ This package intentionally has no dependencies, and therefore does not wrap anyt
 
 ```swift
 import Vapor
+import Transfer
 
 extension Request {
     func transfer(_ html: String) -> EventLoopFuture<Response> {
-        eventLoop.makeSucceededFuture(Response(status: .ok, headers: headers, body: Response.Body(string: html)))
+        eventLoop.makeSucceededFuture(
+            Response(
+                status: .ok,
+                headers: [HTML_CONTENT_KEY : HTML_CONTENT_VALUE],
+                body: Response.Body(string: html)
+                )
+            )
     }
 }
 
